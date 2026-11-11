@@ -58,7 +58,7 @@ public class KotlinCompiler implements Compiler {
                 String errors = new String(process.getErrorStream().readAllBytes());
                 return new Message("", "Execution Error:\n" + errors);
             }
-            return new Message(output, NO_ERR);
+            return new Message(output, null);
         } catch (Exception e) {
             log.error("Execution failed", e);
             return new Message("", "Execution Error: " + e.getMessage());
