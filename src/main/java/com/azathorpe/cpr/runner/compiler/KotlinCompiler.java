@@ -12,7 +12,7 @@ public class KotlinCompiler implements Compiler {
 
     @Override
     public String compile(String sourceFile) {
-        log.info(sourceFile + " is compiling...");
+        log.info("{} is compiling...", sourceFile);
         // Compile
         try {
             Process compileProcess = new ProcessBuilder(

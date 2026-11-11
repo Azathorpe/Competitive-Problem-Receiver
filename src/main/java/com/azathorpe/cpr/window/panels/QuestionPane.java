@@ -1,6 +1,7 @@
 package com.azathorpe.cpr.window.panels;
 
 import com.azathorpe.cpr.model.TestCase;
+import com.azathorpe.cpr.runner.compiler.Compiler;
 import com.azathorpe.cpr.utils.Infos;
 import com.azathorpe.cpr.utils.PersistentStorage;
 import com.intellij.ui.JBColor;
@@ -112,7 +113,7 @@ public class QuestionPane extends JPanel {
                     String error = result.getError();
                     String output = result.getOutput();
 
-                    if (error != null && !error.isEmpty()) {
+                    if (error != null && !error.isEmpty() && !error.equals(Compiler.NO_ERR)) {
                         // 编译错误 或 运行时错误 / 超时
                         myOutputArea.setText(error);
                         myOutputArea.setForeground(JBColor.RED);
