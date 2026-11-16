@@ -29,6 +29,7 @@ public class Infos {
     public static final String CPP = "C++";
     public static final String PYTHON = "Python";
     public static final String KOTLIN = "Kotlin";
+    public static final String GO = "GO";
     private static final Log log = LogFactory.getLog(Infos.class);
 
     public static Settings settings = new Settings();
@@ -98,6 +99,10 @@ public class Infos {
                 compiler = new KotlinCompiler();
                 saveImpls = new KotlinImpl();
             }
+//            case GO -> {
+//                compiler = new GOCompiler();
+//                saveImpls = new GOImpl();
+//            }
             default -> {
                 compiler = new JavaCompiler();
                 saveImpls = new JavaImpl();

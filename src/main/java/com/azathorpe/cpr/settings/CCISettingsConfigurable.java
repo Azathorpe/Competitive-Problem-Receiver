@@ -49,13 +49,17 @@ public class CCISettingsConfigurable implements Configurable {
                 Infos.PYTHON,
                 Infos.CPP,
                 Infos.C,
-                Infos.KOTLIN});
+                Infos.KOTLIN,
+                Infos.GO
+        });
         comboBoxLanguage.setSelectedIndex(
                 Infos.settings.getLanguage().equals(Infos.JAVA) ? 0 :
                         Infos.settings.getLanguage().equals(Infos.PYTHON) ? 1 :
                         Infos.settings.getLanguage().equals(Infos.CPP) ? 2 :
                         Infos.settings.getLanguage().equals(Infos.C) ? 3 :
-                        4);
+                        Infos.settings.getLanguage().equals(Infos.KOTLIN) ? 4 :
+                        Infos.settings.getLanguage().equals(Infos.GO) ? 5 :
+                -1);
         comboBoxLanguage.addActionListener(e -> {
             String language = Objects.requireNonNull(comboBoxLanguage.getSelectedItem()).toString();
             Infos.settings.setLanguage(language);

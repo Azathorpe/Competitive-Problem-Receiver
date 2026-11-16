@@ -22,12 +22,14 @@
         感谢使用！如果您发现任何错误或有任何建议，请随时在 GitHub 仓库上打开一个 issue：
             https://github.com/Azathorpe/Competitive-Problem-Receiver
 
-        <p><b>⚠️ Note:</b> This plugin identifies languages by file extensions. Please configure your default language in <i>Settings -> Tools -> Competitive Problem Receiver</i>.</p>
+        <p><b>⚠️ Note:</b> This plugin identifies languages by file extensions. Please configure your default language in <i>Settings → Tools → Competitive Problem Receiver</i>.</p>
         <b>⚠️ 注意：</b> 本插件通过文件后缀来识别语言。请在 <i>设置 -> 工具 -> Competitive Problem Receiver</i> 中设置您的默认语言。初始默认语言为 Java。
         ]]>
     </description>
 
     <change-notes><![CDATA[
+        <h3>v1.2.1 修复Kotlin运行bug</h3>
+
         <h3>v1.2 更新 / What's Changed</h3>
         <b>中文版:</b>
         <ul>
